@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Holi ❤️</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #ffd6e0, #ffe8b6, #d6f0ff);
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .page {
+        display: none;
+        height: 100vh;
+        padding: 40px 20px;
+        box-sizing: border-box;
+        animation: fadeIn 1s ease;
+      }
+
+      .active {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: auto;
+        padding-top: 60px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        max-width: 600px;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      button {
+        margin-top: 30px;
+        padding: 12px 25px;
+        font-size: 16px;
+        border: none;
+        border-radius: 25px;
+        background: #ff4f81;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        transform: scale(1.05);
+      }
+
+      .heart {
+        font-size: 60px;
+        animation: pulse 1.5s infinite;
+        cursor: pointer;
+      }
+
+      .slider img {
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .celebration-page {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hearts-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+      }
+
+      .floating-heart {
+        position: absolute;
+        font-size: 20px;
+        animation: floatUp 4s linear infinite;
+        opacity: 0.8;
+      }
+
+      @keyframes floatUp {
+        0% {
+          transform: translateY(100vh) scale(1);
+          opacity: 0;
+        }
+        30% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-10vh) scale(1.5);
+          opacity: 0;
+        }
+      }
+
+      .slider img {
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 15px;
+        animation: gentleZoom 6s ease-in-out infinite;
+      }
+
+      @keyframes gentleZoom {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Page 1 -->
+    <div class="page active">
+      <div class="heart">❤️</div>
+      <h1>Happy Holi 🌈</h1>
+      <p>
+        May your life always be filled with beautiful colors 🌸 happiness that
+        feels peaceful, and moments that make you smile without a reason ✨
+        <br /><br />
+        Before this day ends… there’s something I want you to read 🤍
+      </p>
+      <button onclick="nextPage()">There’s Something I Want to Tell You</button>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page">
+      <h1>I Never Believed in Love</h1>
+      <p>
+        Whenever I looked around me, I never truly believed in something called
+        “real love.” 💭
+        <br /><br />
+        To me, most relationships felt like dependency — two people needing each
+        other… until one day the feelings slowly fade away.
+        <br /><br />
+        I saw breakups. I saw second chances. I saw the same cycle repeating
+        again and again. 🔁
+        <br /><br />
+        So I made a decision long ago… I would never let myself get deeply
+        involved.
+        <br /><br />
+        I chose to focus on myself. Stay guarded. Stay practical. 🛡️
+        <br /><br />
+        Even when I first met you, I never asked for your number. I never asked
+        for your social media.
+        <br /><br />
+        Not because I didn’t care…
+        <br /><br />
+        But because I was afraid — that the ending would look just like everyone
+        else’s.
+        <br /><br />
+        So I built boundaries around my heart. Strong ones. Silent ones.
+        <br /><br />
+        And I was completely sure… nothing could ever cross them 🤍
+      </p>
+      <button onclick="nextPage()">Keep Reading</button>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="page">
+      <h1>And Then… You Happened.</h1>
+      <p>
+        And then… somewhere between conversations and silence… something quietly
+        changed inside me 🌙
+        <br /><br />
+        I don’t remember exactly when we exchanged numbers. I don’t remember
+        when talking to you became a habit.
+        <br /><br />
+        I just remember telling myself, “It’s nothing. Just a phase. It will
+        pass.”
+        <br /><br />
+        So I gave myself time. I tried to stay distant. I tried to convince my
+        heart this was temporary.
+        <br /><br />
+        But the more I stepped back… the more my thoughts stepped toward you.
+        <br /><br />
+        You were in my mornings. In my work breaks. In random moments of the
+        day.
+        <br /><br />
+        And that scared me… because this wasn’t dependency. This wasn’t
+        excitement.
+        <br /><br />
+        This felt… different 🤍
+      </p>
+      <button onclick="nextPage()">There’s More</button>
+    </div>
+
+    <!-- Page 4 -->
+    <div class="page">
+      <h1>Now I Understand ❤️</h1>
+      <p>
+        I kept asking myself… Is this just attachment? Is this just emotion? Or
+        is it something deeper?
+        <br /><br />
+        So I waited. I let the excitement settle. I gave myself time to
+        understand it.
+        <br /><br />
+        But nothing faded.
+        <br /><br />
+        My feelings didn’t reduce — they became calmer… but stronger. 🌿
+        <br /><br />
+        I realized something important.
+        <br /><br />
+        I don’t want anything from you. I don’t need you to complete me.
+        <br /><br />
+        I love you because my heart feels peaceful with you. Because even your
+        presence in my thoughts makes my day lighter. ✨
+        <br /><br />
+        This isn’t noise. This isn’t obsession. This isn’t fear.
+        <br /><br />
+        It’s a quiet certainty.
+        <br /><br />
+        And that certainty… is you ❤️
+        <br /><br />
+        <!-- I love you. Not because I need you… but because my heart truly chose
+        you. -->
+      </p>
+      <button onclick="nextPage()">One Last Thing</button>
+    </div>
+
+    <!-- Page 5 -->
+    <div class="page">
+      <h1>About The Silence…</h1>
+      <p>
+        Before I end this… there is something I need to say 🤍
+        <br /><br />
+        I know things have felt different lately. I know there has been silence
+        between us.
+        <br /><br />
+        And maybe that silence hurt. Maybe it created distance.
+        <br /><br />
+        If I ever made you feel ignored, unimportant, or confused… I am truly
+        sorry.
+        <br /><br />
+        It was never my intention to hurt you. Sometimes I overthink. Sometimes
+        I step back instead of stepping forward.
+        <br /><br />
+        But this one week made me realize something clearly — your absence feels
+        heavier than I expected.
+        <br /><br />
+        I don’t want ego. I don’t want misunderstandings. I don’t want distance.
+        <br /><br />
+        I just want honesty between us.
+        <br /><br />
+        I am not asking for an answer right now. I am not forcing anything.
+        <br /><br />
+        I just wanted you to know what’s truly in my heart.
+      </p>
+      <button onclick="nextPage()">What I Truly Want</button>
+    </div>
+
+    <!-- Page 6 -->
+    <div class="page">
+      <h1>Will You…</h1>
+      <p>
+        I have given myself enough time to understand this feeling.
+        <br /><br />
+        It hasn’t faded. It hasn’t weakened. It has only become clearer.
+        <br /><br />
+        So today… with honesty in my heart — I want to ask you something simple.
+        <br /><br />
+        Will you give us a chance?
+        <br /><br />
+        Not as a promise of forever. Not as pressure.
+        <br /><br />
+        But as two people choosing each other for as long as it feels true. 🌿
+        <br /><br />
+        Will you let me be with you? And allow me to love you with respect and
+        sincerity? ❤️
+      </p>
+
+      <button onclick="nextPage()">Continue 🤍</button>
+    </div>
+
+    <!-- Photo Slider Page -->
+    <div class="page celebration-page">
+      <h1>You Mean More Than You Know 💖</h1>
+
+      <div class="slider">
+        <img id="slide" src="photo1.jpg" />
+      </div>
+
+    <p style="font-weight: 900; background: linear-gradient(135deg, #ff4f81, #ff3f6f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 36px; font-family: 'Georgia', serif; letter-spacing: 2px;">I love you. I want to be with you.</p>
+
+      <button onclick="nextPage()">Continue 🤍</button>
+
+      <!-- Floating Hearts Container -->
+      <div class="hearts-container"></div>
+    </div>
+
+    <!-- Final Page -->
+    <div class="page">
+      <h1>Just One Honest Request 🤍</h1>
+      <p>
+        I don’t know what your response will be. But if you want say something
+        right now please call me 📞 Or can we meet Friday morning at the office
+        location for just 10 minutes?
+        <br /><br />
+        No pressure. Just honesty. I will respect whatever you decide.
+      </p>
+      <button onclick="refreshPage()">Start Over with Me 💖</button>
+    </div>
+
+    <script>
+      let currentPage = 0;
+      const pages = document.querySelectorAll(".page");
+
+      function nextPage() {
+        pages[currentPage].classList.remove("active");
+        currentPage++;
+        if (currentPage < pages.length) {
+          pages[currentPage].classList.add("active");
+        }
+      }
+
+      function refreshPage() {
+        location.reload();
+      }
+
+      // Simple slider
+      const images = [
+        "photo1.jpeg",
+        "photo2.jpeg",
+        "photo3.jpeg",
+        "photo4.jpeg",
+      ];
+      let index = 0;
+
+      setInterval(() => {
+        if (document.getElementById("slide")) {
+          index = (index + 1) % images.length;
+          document.getElementById("slide").src = images[index];
+        }
+      }, 3000);
+
+      // Floating heart animation generator
+      function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("floating-heart");
+        heart.innerHTML = "💖";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.fontSize = Math.random() * 20 + 15 + "px";
+        heart.style.animationDuration = Math.random() * 3 + 3 + "s";
+        document.querySelector(".hearts-container").appendChild(heart);
+
+        setTimeout(() => {
+          heart.remove();
+        }, 4000);
+      }
+
+      // Start hearts when celebration page is active
+      setInterval(() => {
+        if (
+          document
+            .querySelector(".celebration-page")
+            .classList.contains("active")
+        ) {
+          createHeart();
+        }
+      }, 400);
+    </script>
+  </body>
+</html>
