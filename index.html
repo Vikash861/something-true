@@ -28,6 +28,7 @@
         align-items: center;
         overflow-y: auto;
         padding-top: 60px;
+        padding-bottom: 80px; /* ensure bottom content (buttons) remains reachable when scrolling */
       }
 
       h1 {
@@ -54,6 +55,13 @@
 
       button:hover {
         transform: scale(1.05);
+      }
+
+      /* keep navigation/action button visible on small screens */
+      .active button {
+        position: sticky;
+        bottom: 20px;
+        z-index: 1;
       }
 
       .heart {
@@ -92,7 +100,6 @@
 
       .celebration-page {
         position: relative;
-        overflow: hidden;
       }
 
       .hearts-container {
@@ -333,10 +340,10 @@
       </p>
 
       <button onclick="nextPage()">Continue 🤍</button>
-
-      <!-- Floating Hearts Container -->
-      <div class="hearts-container"></div>
     </div>
+
+    <!-- Floating Hearts Container -->
+    <div class="hearts-container"></div>
 
     <!-- Final Page -->
     <div class="page">
